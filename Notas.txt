@@ -14,3 +14,5 @@
 5. acabar funcion existing_lists
 6. no funciona el ordering de boards, por que? - por un tema del user_id, en los demas funciona perfecto
 7. widht de las navbars que se ajuste a la creación de listas
+
+COPIAR EL FICHERO ENV DEL ANTIGUO PROYECTO
