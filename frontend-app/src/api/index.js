@@ -32,7 +32,7 @@ const fetchResource = (resourceName, userOptions = {}, id, params = {}) => { //e
     }
 
 
-    if(params) {
+    if(Object.keys(params).length > 0) {
         url = `${url}?`
         Object.keys(params).forEach((key, index ) => {
             if(index > 0) {
