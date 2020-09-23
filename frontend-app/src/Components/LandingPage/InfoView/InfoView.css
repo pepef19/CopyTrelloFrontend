@@ -1,0 +1,31 @@
+.info-view-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.info-view-box img{
+    margin-left: 5rem;
+}
+
+.info-view-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8rem;
+    text-align: left;
+}
+
+.info-view-right h3{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.info-view-right p{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+}

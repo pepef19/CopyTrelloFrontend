@@ -1,0 +1,25 @@
+.your-way-box{
+    width: 500px;
+    margin: 4rem auto 0 auto;
+}
+
+.your-way-center h3{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.your-way-center p{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+}
+
+.your-way-card-box{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}

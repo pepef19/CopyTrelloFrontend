@@ -1,0 +1,182 @@
+.root-signup {
+    font-family: "Helvetica", sans-serif;
+    background-color: #F9FAFC;
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.44em;
+    zoom: 112%;
+    display: inline-flex;
+}
+
+.display-image-right {
+    display: grid;
+    align-content: end;
+}
+
+.display-image-left {
+    display: grid;
+    align-content: end;
+}
+
+.trello-main-logo {
+    width: 140px;
+    height: 43px;
+    padding: 35px;
+
+}
+
+.inner-section {
+    width: 100%;
+    padding: 0px;
+    overflow: visible;
+    margin-bottom: 30px;
+}
+.section-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.layout-account-form {
+    background-color: white;
+    border-radius: 3px;
+    padding: 25px 40px;
+    box-shadow: rgba(0,0,0,0.1) 0 0 10px;
+}
+
+.quick-switch {
+    color: #4D4D4D;
+}
+h1 {
+    text-align: center;
+    color: #5E6C84;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.quiet-tos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5E6C84;
+}
+
+a {
+    text-decoration: none;
+    color: #0052CC;
+}
+
+.submit-button:disabled {
+    margin-bottom: 0;
+    width: 320px;
+    height: 33.78px;
+    background: #E2E4E6;
+    color: hsl(0,0%,55%);
+    font-weight: bold;
+    text-decoration: none;
+    border: 0px;
+    padding: .6em 1.3em;
+    display: inline-block;
+    border-radius: .3em;
+    position: relative;
+}
+
+.submit-button:enabled {
+    margin-bottom: 0;
+    width: 320px;
+    height: 33.78px;
+    background: #5AAC44;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0px;
+    padding: .6em 1.3em;
+    display: inline-block;
+    border-radius: .3em;
+    position: relative;
+    cursor: pointer;
+}
+
+.submit-button:enabled:hover {
+    background-color: #61BD4F;
+}
+
+hr {
+    margin-top: 25px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(0,0%,80%);
+    padding: 0;
+}
+
+.global-footer {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.global-footer hr {
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+footer {
+    margin: 4em 1em;
+    text-align: center;
+}
+
+#language-picker-container {
+    background-color: transparent;
+}
+#language-picker {
+    color: #5E6C84;
+    background: none;
+    border: 2px solid #EDEFF0;
+    height: 40px;
+    width: 150px;
+    padding: .5em;
+    margin-top: 10px;
+
+}
+
+.dropdown-icon {}
+.atlassian-logo-small {}
+.global-footer-list {
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.global-footer-list-item {
+    margin: 0 .4em;
+    display: inline-block;
+}
+
+.global-footer a {
+    text-decoration: none;
+    color: #5E6C84;
+}
+
+.global-footer a:hover {
+    color: #5E6C84;
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    margin: .5em 0 0;
+    padding: 0;
+    display: block;
+}
+
+.duplicate-email-error-register {
+    color: white;
+    text-decoration: underline;
+}
+
+

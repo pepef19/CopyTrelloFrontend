@@ -1,0 +1,41 @@
+.team-task-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.team-task-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 4rem;
+    text-align: left;
+}
+
+.team-task-left h3{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.team-task-left p{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+}
+
+.team-task-left button{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    height: 44px;
+    width: 165px;
+    padding: 0 1rem;
+    color: #FFFFFF;
+    background-color: #6D8EA2;
+    border-color: #6D8EA2;
+    border-style: none;
+    border-radius: .4rem;
+}
+

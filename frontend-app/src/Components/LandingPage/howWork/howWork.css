@@ -1,0 +1,46 @@
+.how-work-text{
+    width: 500px;
+    margin: auto;
+}
+
+.how-work-text h3{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.how-work-text p{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+}
+
+.how-work-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-work-img-box img{
+    margin: 0 1rem;
+}
+
+.how-work-img-box button{
+    width: 80px;
+    height: 80px;
+    border-style: none;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 9px 10px 33px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 33px -6px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 33px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.how-work-img-box button:hover{
+    background-color: #00C2E0;
+}

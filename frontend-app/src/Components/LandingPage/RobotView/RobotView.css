@@ -1,0 +1,41 @@
+.robot-view-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.robot-view-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 4rem;
+    text-align: left;
+}
+
+.robot-view-left h3{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.robot-view-left p{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 .5rem 0;
+    line-height: 1.5;
+}
+
+.robot-view-left ul{
+    padding: 0;
+    margin-left: 2rem;
+}
+
+.robot-view-left li{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+}
+
+.robot-view-left li:not(:last-of-type){
+    margin-bottom: .3rem;
+}

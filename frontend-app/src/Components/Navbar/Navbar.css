@@ -1,0 +1,113 @@
+.header-container-navbar {
+    background-color: #0e76c1;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    justify-content: space-between;
+    margin: -5px -5px;
+
+
+}
+.left-container-navbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.right-container-navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    position: absolute;
+    right:10px;
+
+}
+.button-container-navbar {
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.3);
+    box-shadow: none;
+    color: #fff;
+    display: flex;
+    font-weight: 650;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 4px 0 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.button-container-bell {
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, .3);
+    box-shadow: none;
+    background-color: orangered;
+    display: flex;
+    font-weight: 650;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 4px 0 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+.home-icon {
+    display: inline;
+    height: auto;
+    width:auto;
+
+}
+
+.input-container-navbar {
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: hsla(0,0%,100%,.5);
+    float: left;
+    font-size: 13px;
+    height: 32px;
+    line-height: 19px;
+    margin: 0;
+    outline: none;
+    padding-left: 8px;
+    padding-right: 30px;
+    transition: width .15s;
+    width: 180px;
+    position: relative;
+
+}
+
+.trello-logo-imagen-navbar {
+    width: 100px;
+    height: 40px;
+    margin: -5px;
+}
+
+.trello-img-logo-navbar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-bottom: 100px;
+}
+
+.search-container-navbar {
+    border-radius: 3px;
+    border-bottom-color: white;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    line-height: 32px;
+    width: 28px;
+}
+

@@ -1,0 +1,41 @@
+.companies-trello-box{
+    background: linear-gradient(180deg, #42548e 0%, #6b668c 100%);
+    border-radius: .8rem;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.companies-trello-box h3{
+    font-family: "Charlie Text", sans-serif;
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.companies-trello-box p{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.companies-trello-box button{
+    font-family: "Charlie Text", sans-serif;
+    font-size: 1.25rem;
+    height: 44px;
+    padding: 0 1rem;
+    color: #000000;
+    background-color: #EBECF0;
+    border-color: #EBECF0;
+    border-style: none;
+    border-radius: .4rem;
+    margin-top: 2rem;
+}
+
+.companies-trello-img-box img{
+    width: 250px;
+    height: 50px;
+    margin: 1.5rem 0;
+}

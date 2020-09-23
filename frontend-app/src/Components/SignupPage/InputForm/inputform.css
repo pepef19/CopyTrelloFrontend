@@ -1,0 +1,50 @@
+.form-field {
+    background-color: #FAFBFC;
+    border: 2px solid #DFE1E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 44px;
+    width: 320px;
+    transition: background-color .2s ease-in-out 0s,border-color .2s ease-in-out 0s;
+    display: block;
+    margin: 0 0 1.2em;
+    max-width: 400px;
+    padding: .5em;
+    line-height: normal;
+}
+
+.form-field:focus {
+    background-color: white;
+    border: 1px solid #CDD2D4;
+}
+
+.input-error-message-email {
+    margin-bottom: .6em;
+    margin-top: -0.9em;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    background: #eb5a46;
+    color: #fbedeb;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #eb5a46;
+    padding: .5em 1em;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+.input-error-message-password {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    background: #eb5a46;
+    color: #fbedeb;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #eb5a46;
+    padding: .5em 1em;
+    font-weight: 500;
+    text-align: left;
+}

@@ -1,0 +1,178 @@
+.container-login {
+    font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    background-color: #F9FAFC;
+    height: 100vh;
+    width: 100vw;
+    zoom: 110%;
+}
+
+.trello-main-logo-login {
+    width: 408px;
+    display: block;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.AtlassianLogo {
+    width: 150px;
+    display: block;
+    height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.headForm {
+    width: 100%;
+    height: 28px;
+    color: #5e6C84;
+    font-size: 16px;
+    margin: 10px 0px 25px;
+    text-align: center;
+
+}
+
+.oSeparator {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #5e6C84;
+    font-weight: 400;
+}
+
+.userFormField {
+    border: 2px solid #eeeeee;
+    width: 320px;
+    height: 25px;
+    border-radius: 5px ;
+    background: #FAFBFC;
+    margin: 0px 0px 17px;
+    padding: 7px;
+
+}
+
+.inner-section-login {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.formBox {
+    display: flex ;
+    flex-direction: column;
+    padding: 25px 40px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.1) 0 0 10px;
+ }
+
+.loginButton {
+    border: 5px;
+    width: 100%;
+    height: 35px;
+    background: #5AAC44;
+    padding: 8px 18px;
+    border-radius: 3px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.ExternalLoginButton {
+    font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 14px;
+    border: 5px;
+    width: 100%;
+    height: 40px;
+    background: #FFFF;
+    padding: 8px 18px;
+    border-radius: 3px;
+    color: #282c34c4;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 0 5px 1px;
+    margin: 0px 0px 10px;
+}
+
+.googleIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.googleButtonTidy {
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.line {
+    border-top: 1px solid #bababb;
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+}
+
+.FooterLine {
+    border-top: 1px solid #bababb;
+    height: 2px;
+    max-width: 418px;
+    padding: 0;
+    margin: 10px auto 10px auto;
+}
+
+
+
+.bottomFromLink {
+    text-align: center;
+    color: #0052CC;
+    margin: 15px 0px 0px;
+}
+
+.bottomFromLinkText {
+    margin: 10px 0 10px;
+}
+
+.footer-login {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.error-login {
+    border: 2px solid #eeeeee;
+    width: 320px;
+    height: 25px;
+    border-radius: 5px ;
+    background: #FAFBFC;
+    margin: 0px 0px 17px;
+    padding: 7px;
+    border: 1px solid red;
+}
+
+.errorMessage {
+    font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 12px;
+    color: red;
+    }
+
+.input-error-message-login {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 350px;
+    background: #eb5a46;
+    color: #fbedeb;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #eb5a46;
+    padding: .5em 1em;
+    font-weight: 500;
+    text-align: left;
+}

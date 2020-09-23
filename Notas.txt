@@ -1,0 +1,16 @@
+1. Como quitar una dependencia ya instalada
+2. ListWrapper - como cambiar el estado de addCard de objeto a string cambiando handleChange.
+3. Explicar 1ra frase de:
+    public function findLatestActivityCreated(Request $request)
+        {
+            $card_id = $request->query()["card_id"];
+            $activity_order = CardActivity::where("card_id", $card_id)->max('ordering');
+            if(is_null($activity_order)){
+                $activity_order = 0;
+            }
+            return response()->json($activity_order);
+        }
+4. cambiar el background-color de todo el board
+5. acabar funcion existing_lists
+6. no funciona el ordering de boards, por que? - por un tema del user_id, en los demas funciona perfecto
+7. widht de las navbars que se ajuste a la creación de listas

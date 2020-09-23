@@ -1,0 +1,45 @@
+/*LANDING TOP HEADER*/
+.landing-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1076C1;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+}
+
+
+.landing-buttons-box{
+    display: flex;
+    align-items: center;
+}
+
+.landing-page-header-btn{
+    font-weight: 400;
+    padding: .25rem .5rem;
+    font-size: 1.09375rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.landing-page-header-btn:first-of-type{
+    margin-right: .5rem;
+    color: #FFFFFF;
+}
+
+.landing-page-header-btn:first-of-type:hover{
+    text-decoration: underline;
+}
+
+.landing-page-header-btn:last-of-type{
+    margin-right: .5rem;
+    background-color: #FFFFFF;
+    color: #1076C1;
+}
+
+.landing-page-header-btn{
+    cursor: pointer;
+    text-decoration: none;
+}
+

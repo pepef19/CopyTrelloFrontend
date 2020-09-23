@@ -1,0 +1,284 @@
+.boardHeader-navBar {
+    height: auto;
+    padding: 8px 4px 4px 8px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: padding .1s ease-in;
+    background-color: #1188de;
+}
+
+.project {
+    background: transparent;
+    cursor: default;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0;
+    text-decoration: none;
+    max-width: calc(100% - 24px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-button {
+    cursor: default;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.input-button-project {
+    display: none;
+    background-color: #fff;
+    border: 0;
+    font-weight: 700;
+    font-size: 18px;
+    height: 32px;
+    margin: 0;
+    padding: 0 12px;
+}
+
+.button-star {
+    border-radius: 3px;
+    color: #fff;
+    cursor: default;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 8px 8px 10px;
+    overflow: hidden;
+    padding-left: 32px;
+    position: relative;
+    text-decoration: none;
+    background-color: hsla(0,0%,100%,.24);
+}
+
+.button-star-icon {
+    background-clip: content-box;
+    background-origin: content-box;
+    color: #fff;
+    padding: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.privado {
+    position: relative;
+    float: left;
+}
+
+.privado-button {
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.privado-button-divisor {
+    float: left;
+    border-left: 1px solid hsla(0,0%,100%,.24);
+    height: 16px;
+    margin: 8px 8px 12px 4px;
+}
+
+#privado-asunto {
+    float: left;
+}
+
+.asunto-button {
+    background-color: hsla(0,0%,100%,.24);
+    border-radius: 3px;
+    color: #fff;
+    cursor: default;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px 4px 0;
+    overflow: hidden;
+    padding-left: 12px;
+    position: relative;
+    text-decoration: none;
+}
+
+.asunto-button-text {
+    padding-right: 12px;
+    color: #fff;
+    cursor: default;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.privado-solo {
+    border-radius: 3px;
+    color: #fff;
+    cursor: default;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px 4px 0;
+    overflow: hidden;
+    padding-left: 32px;
+    position: relative;
+    text-decoration: none;
+    background-color: hsla(0,0%,100%,.24);
+}
+
+.privado-solo-icon {
+    background-clip: content-box;
+    background-origin: content-box;
+    color: #fff;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 20px;
+    cursor: default;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.privado-solo-icon-text {
+    color: #fff;
+    cursor: default;
+    font-size: 14px;
+    line-height: 32px;
+    padding-right: 12px;
+}
+
+.opciones {
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.opciones-user {
+    cursor: default;
+    float: left;
+    margin-left: 4px;
+    overflow: hidden;
+    padding: 2px 0 0 2px;
+}
+
+.opciones-user-member {
+    height: 28px;
+    width: 28px;
+    margin: 0 0 0 -2px;
+    float: left;
+    z-index: 1;
+    background-color: #dfe1e6;
+    border-radius: 25em;
+    color: #172b4d;
+    cursor: pointer;
+    display: block;
+    overflow: visible;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+}
+
+.member-initials {
+    height: 28px;
+    line-height: 28px;
+    width: 28px;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    color: #172b4d;
+    cursor: pointer;
+}
+
+#invite-button {
+    float: left;
+}
+
+.invite-button-table {
+    background-color: hsla(0,0%,100%,.24);
+    border-radius: 3px;
+    color: #fff;
+    cursor: default;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    text-decoration: none;
+    margin: 0 4px 4px 8px;
+}
+
+.invite-button-text {
+    color: #fff;
+    cursor: default;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.menu {
+    float: right;
+    position: relative;
+    display: block;
+    margin-left: auto;
+}
+
+.menu-icon {
+    background-color: hsla(0,0%,100%,.24);
+    border-radius: 3px;
+    color: #fff;
+    cursor: default;
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0 4px 4px 0;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 2px;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu-icon-a {
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    color: #fff;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 20px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    cursor: default;
+}
+
+.menu-button-text {
+    color: #fff;
+    cursor: default;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0 10px;
+}

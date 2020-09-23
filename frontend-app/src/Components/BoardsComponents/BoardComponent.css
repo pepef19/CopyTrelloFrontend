@@ -1,0 +1,196 @@
+.render-board-screen {
+    float: left;
+    margin: 5px;
+    display: flex;
+}
+
+.list-composer-container {
+    min-height: 38px;
+    max-height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    width: fit-content;
+}
+
+.open-list-composer {
+    border-radius: 3px;
+    color: #5e6c84;
+    display: block;
+    flex: 1 0 auto;
+    margin: 2px 0 8px 8px;
+    padding: 4px 8px;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-color: #d4d4d4;
+}
+
+.open-list-composer-activity {
+    border-radius: 3px;
+    color: #5e6c84;
+    display: block;
+    flex: 1 0 auto;
+    margin: 2px 0 12px 0;
+    padding: 4px 8px;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-color: #d4d4d4;
+}
+
+.submit-button-card {
+    background-color: #5aac44;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    margin: 2px 8px 8px 8px;
+}
+
+.submit-button-item {
+    background-color: #5aac44;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    margin: 2px 8px 8px 8px;
+}
+
+.list-wrapper {
+    width: 272px;
+    margin: 0 4px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+
+}
+
+.list-content{
+    background-color: #ebecf0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+}
+
+.list-header {
+    flex: 0 0 auto;
+    padding: 10px 8px;
+    position: relative;
+    min-height: 20px;
+
+}
+
+.list-container-boards {
+    display: flex;
+}
+
+.list-card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 300px;
+    min-height: 40px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    text-align: left;
+    padding-top: 6px;
+    padding-left: 6px;
+
+
+}
+
+.list-card-details {
+    overflow: hidden;
+    padding: 2px 6px;
+    position: relative;
+    z-index: 10;
+}
+
+.card-composer-container {
+    min-height: 38px;
+    max-height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+
+}
+
+.open-card-composer {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    color: #5e6c84;
+    display: block;
+    flex: 1 0 auto;
+    margin: 2px 0 8px 8px;
+    padding: 4px 8px;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-color: #d4d4d4;
+
+}
+
+.list-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px;
+
+}
+
+.list-header-button {
+    content: "\E94E";
+}
+
+.modal-wrapper-list {
+    position: fixed;
+    width: 304px;
+    will-change: top, left;
+    top: 70px;
+    right: 10px;
+    border-color: darkgrey;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px -4px rgba(9,30,66,.25), 0 0 0 1px rgba(9,30,66,.08);
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    z-index:2;
+
+}
+.modal-header-title {
+    margin-bottom: 8px;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 12px 1fr 12px;
+}
+
+.delete-card-button {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    height: 32px;
+    left: 0;
+    line-height: 32px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    align-content: end;
+    text-align: right;
+    cursor: pointer;
+    margin-left: 250px;
+}

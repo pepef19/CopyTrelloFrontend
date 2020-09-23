@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "pepe",
+      "email": "pepe@pepe.com",
+      "password": "1234",
+      "created_at": "1234",
+      "updated_at": "1235"
+    }
+  ]
+}

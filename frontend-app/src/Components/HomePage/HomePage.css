@@ -1,0 +1,12 @@
+.home-page{
+    display: flex;
+    justify-content: start;
+    margin-top: 2rem;
+}
+
+.home-page-right{
+    margin-left: 3rem;
+
+
+
+}

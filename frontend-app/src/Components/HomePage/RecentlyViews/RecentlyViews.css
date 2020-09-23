@@ -1,0 +1,19 @@
+.recently-view-title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: .5rem 0 1rem 0;
+}
+
+.recently-views-box h4{
+    margin: 0 0 0 .4rem;
+}
+
+.clock-icon{
+    font-size: 1.2rem;
+}
+
+.boards-pre-view{
+    display: flex;
+    justify-content: start;
+}
