@@ -37,8 +37,6 @@ export const ListWrapper = (props) => {
                     setOrdering(ordering + 1)
                     return response.json()
                 }
-                throw response;
-            }).then(response => {
                 setRefresh(false);
                 setAddCard({...addCard, description: ""})
         })

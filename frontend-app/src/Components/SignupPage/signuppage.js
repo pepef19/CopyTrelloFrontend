@@ -46,7 +46,6 @@ const Signup = props => {
     };
 
     const handleOnClickSubmit = () => {
-        debugger;
         if(!errors.password && !errors.email) {
             Api.fetchResource("register", {
                 "method": "POST",
@@ -56,7 +55,7 @@ const Signup = props => {
                     setUserAlreadyRegisteredError(true)
                 }else{
                     localStorage.setItem('token', response.access_token);
-                    Api.fetchResource("sendEmail", {
+                    Api.fetchResource("send_email", {
                         "method": "POST",
                         "body": data,
                     }).then(() => {

@@ -36,10 +36,8 @@ export const ShowActivity = (props) => {
                     setOrdering(ordering + 1)
                     return response.json();
                 }
-                throw response;
-            }).then(response => {
-            setAddActivity({text: ""})
-            setRefreshCard(false);
+                setAddActivity({text: ""})
+                setRefreshCard(false);
         })
     }
 

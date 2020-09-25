@@ -34,8 +34,6 @@ export const AddList = (props) => {
                     setOrdering(ordering + 1)
                     return response.json();
                 }
-                throw response;
-            }).then(response => {
                 setRefresh(false);
                 setAddList({...addList, title:""})
         })

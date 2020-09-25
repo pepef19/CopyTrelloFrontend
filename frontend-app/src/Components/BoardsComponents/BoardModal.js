@@ -57,14 +57,12 @@ export default function BoardModal(props) {
                 "title": addBoard.title,
                 "user_id": id,
                 "ordering": ordering + 1
-            }
+            },
         }).then((response) => {
                 if(response.ok) {
                     setOrdering(ordering + 1)
                     return response.json();
                 }
-                throw response;
-            }).then(response => {
                 history.push(`/board/${response.id}`)
         })
     }

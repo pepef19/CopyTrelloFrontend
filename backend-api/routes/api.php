@@ -108,4 +108,4 @@ Route::post('/login','AuthController@login');
 
 //ruta email
 
-Route::post('/sendEmail', 'UsersController@sendEmail');
+Route::post('/send_email', 'UsersController@sendEmail');
