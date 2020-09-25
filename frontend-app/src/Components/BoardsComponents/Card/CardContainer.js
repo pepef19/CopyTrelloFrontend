@@ -10,7 +10,7 @@ export const CardContainer = (props) => {
     const handleDeleteCard = () => {
         Api.fetchResource("card", {
             method: "delete",
-        })
+        }, card.id, {})
             .then(() => {
                 setRefresh(false)
             })

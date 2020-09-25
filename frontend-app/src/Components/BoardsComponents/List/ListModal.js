@@ -57,7 +57,7 @@ export default function ListModal(props) {
     const handleDeleteList = () => {
         Api.fetchResource("list", {
             method: "delete"
-        })
+        }, list.id, {})
             .then(response => {
                 setRefresh(false)
                 setOpen(false)
