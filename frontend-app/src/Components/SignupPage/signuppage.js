@@ -55,7 +55,7 @@ const Signup = props => {
                     setUserAlreadyRegisteredError(true)
                 }else{
                     localStorage.setItem('token', response.access_token);
-                    Api.fetchResource("send_email", {
+                    Api.fetchResource("sendEmail", {
                         "method": "POST",
                         "body": data,
                     }).then(() => {
