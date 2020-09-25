@@ -71,7 +71,5 @@ export const ShowActivity = (props) => {
             {renderActivities.map((activity) => <li className="show-activities-display" >{activity.text}</li>)}
             <br/>
         </div>
-
     )
-
 }
