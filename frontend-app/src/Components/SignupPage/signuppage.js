@@ -91,7 +91,7 @@ const Signup = props => {
                                     {errors.password ? <p className="input-error-message-password">La contraseña debe contener al menos 8 caracteres, una letra mayúscula y un número.</p> : undefined}
                                     {userAlreadyRegisteredError ? <p className="input-error-message-password">Correo electrónico ya utilizado por otra cuenta. Puede utilizar <a className="duplicate-email-error-register" href="/login" >el inicio de sesión o la página de contraseña olvidada</a> para restablecer su contraseña.</p> : undefined}
 
-                                    <h1>Crea tu cuenta2</h1>
+                                    <h1>Crea tu cuenta</h1>
 
                                     <InputForm type="email"
                                                onChange={event => handleChange("email", event.target.value)}
