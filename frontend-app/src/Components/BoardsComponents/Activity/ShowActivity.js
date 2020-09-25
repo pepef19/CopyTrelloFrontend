@@ -43,7 +43,7 @@ export const ShowActivity = (props) => {
 
     useEffect(() => {
         if(!refreshCard) {
-            Api.fetchResource("card_activity", {}, id)
+            Api.fetchResource("card_activity/card", {}, id)
                 .then(response => {
                     if (response.length > 0) {
                         setRenderActivities(response);
