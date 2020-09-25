@@ -46,6 +46,7 @@ const Signup = props => {
     };
 
     const handleOnClickSubmit = () => {
+        debugger;
         if(!errors.password && !errors.email) {
             Api.fetchResource("register", {
                 "method": "POST",
@@ -91,7 +92,7 @@ const Signup = props => {
                                     {errors.password ? <p className="input-error-message-password">La contraseña debe contener al menos 8 caracteres, una letra mayúscula y un número.</p> : undefined}
                                     {userAlreadyRegisteredError ? <p className="input-error-message-password">Correo electrónico ya utilizado por otra cuenta. Puede utilizar <a className="duplicate-email-error-register" href="/login" >el inicio de sesión o la página de contraseña olvidada</a> para restablecer su contraseña.</p> : undefined}
 
-                                    <h1>Crea tu cuenta</h1>
+                                    <h1>Crea tu cuenta2</h1>
 
                                     <InputForm type="email"
                                                onChange={event => handleChange("email", event.target.value)}
@@ -135,7 +136,7 @@ const Signup = props => {
                                             className="submit-button"
                                             value="Registrarse"
                                             disabled={!isEnabled}
-                                            onClick={handleOnClickSubmit} >Registrarse</button>
+                                            onClick={handleOnClickSubmit} > Registrarse</button>
                                     <hr />
                                     <span className="bottom-form-link">
                                             <a href="/login">¿Ya tiene una cuenta? Inicie sesión</a>
