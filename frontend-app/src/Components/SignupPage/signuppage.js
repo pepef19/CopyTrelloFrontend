@@ -55,13 +55,13 @@ const Signup = props => {
                     setUserAlreadyRegisteredError(true)
                 }else{
                     localStorage.setItem('token', response.access_token);
-                    Api.fetchResource("sendEmail", {
+                    /*Api.fetchResource("sendEmail", {
                         "method": "POST",
                         "body": data,
-                    }).then(() => {
+                    }).then(() => {*/
                         history.push('/home');
-                    })
-                }
+                    }/*)
+                }*/
         }).catch(function (error) {
             console.log('Hubo un problema con la petición Fetch:' + error);
         })
