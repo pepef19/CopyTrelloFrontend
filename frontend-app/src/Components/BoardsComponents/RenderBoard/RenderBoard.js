@@ -38,15 +38,29 @@ const RenderBoard = (props) => {
     }, [board]);
 
     const orderingControl = (id, newPosition) => {
-        dataFromLists.map((list, index) => {
+        dataFromLists.forEach((list, index) => {
             if (list.id === id) {
                 dataFromLists[index].ordering = parseInt(newPosition, 10)
             } else if (list.ordering <= newPosition) {
                 dataFromLists[index].ordering = list.ordering - 1;
             }
+            Api.fetchResource("updateListsOrder", {
+                "method" : "POST",
+                "body": {
+                    "board_id": board.board.id,
+                    "lists_order": [
+                        {
+                            "id": list.id,
+                            "ordering": list.ordering
+                        }
+                    ]
+                }
+            }).then((response) => {
+                if(response.ok) {
+                    setRefresh(true)
+                }
+            })
         })
-        console.log(id, newPosition)
-        //hacer un fetch y un endpoint que va a recibir un put que hara un foreach sobre el array que paso haciendo un update con el ordering que viene en el objeto que paso por el post
     }
 
     return (
