@@ -55,10 +55,8 @@ const RenderBoard = (props) => {
                         }
                     ]
                 }
-            }).then((response) => {
-                if(response.ok) {
-                    setRefresh(true)
-                }
+            }).then(() => {
+                setRefresh(false) //falta cerrar el modal
             })
         })
     }

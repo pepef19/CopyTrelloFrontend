@@ -37,8 +37,6 @@ export default function ListModal(props) {
     const [open, setOpen] = React.useState(false);
     const [numberOfLists, setNumberOfLists] = React.useState(undefined);
 
-    console.log(numberOfLists)
-
     const handleOpen = () => {
         setOpen(true);
     };
@@ -71,8 +69,8 @@ export default function ListModal(props) {
     }
 
     const generateOption = (numberOfItems) => {
-        let array = [];
-        for (let i = 1; i <= numberOfItems; i++) {
+        let array = []; //he puesto el 0 a lo cutre para solventar el problema de no poder seleccionar el 1, no es la mejor solución
+        for (let i = 0; i <= numberOfItems; i++) {
             array.push(<option>{i}</option>)
         }
         return array;
@@ -84,6 +82,7 @@ export default function ListModal(props) {
         if(currentPosition !== newPosition) {
             orderingControl(list.id, newPosition)
         }
+        setOpen(false)
     }
 
     const body = (
@@ -99,7 +98,7 @@ export default function ListModal(props) {
                 <li className="list-pop-up-option" >
                     <label >Move list...</label>
                     <select className="list-pop-up-item selector-pop-up-list"
-                            onChange={onChangeNewValue} >
+                            onChange={onChangeNewValue} /*siempre me sale 1 como primera opción y no la posición de la lista*/> >
                         { generateOption(numberOfLists) }
                     </select>
                 </li>
