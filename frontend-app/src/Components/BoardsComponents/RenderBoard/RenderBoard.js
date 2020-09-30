@@ -49,7 +49,6 @@ const RenderBoard = (props) => {
                 "body": {
                     "board_id": board.board.id,
                     "lists_order": [
-
                         {
                             "id": list.id,
                             "ordering": list.ordering
