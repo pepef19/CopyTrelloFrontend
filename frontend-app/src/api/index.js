@@ -36,9 +36,9 @@ const fetchResource = (resourceName, userOptions = {}, id, params = {}) => { //e
         url = `${url}?`
         Object.keys(params).forEach((key, index ) => {
             if(index > 0) {
-                url = `&${key}=${params[key]}`;
+                url = `${url}&${key}=${params[key]}`;
             }else {
-                url = `${key}=${params[key]}`;
+                url = `${url}${key}=${params[key]}`;
             }
 
         })

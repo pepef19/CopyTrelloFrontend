@@ -10,7 +10,8 @@ export const ListWrapper = (props) => {
 
     const [addCard, setAddCard] = useState({description: ""}) //innecesario utilizar objeto si solo hay un valor - cambiar
     const [ordering, setOrdering] = React.useState(0)
-    const [numberOfLists, setNumberOfLists] = React.useState(0)
+    const [numberOfLists, setNumberOfLists] = React.useState(undefined)
+
 
     const handleChange = (key, newValue) => {
         setAddCard({...addCard, [key]: newValue})

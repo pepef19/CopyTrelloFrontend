@@ -37,6 +37,7 @@ export default function ListModal(props) {
     const [open, setOpen] = React.useState(false);
     const [numberOfLists, setNumberOfLists] = React.useState(undefined);
 
+    console.log(numberOfLists)
 
     const handleOpen = () => {
         setOpen(true);
@@ -48,7 +49,7 @@ export default function ListModal(props) {
 
     useEffect(() => {
         Api.fetchResource("existing_lists", {}, undefined, {"board_id": board.id})
-            .then(response => {
+            .then(response => {;
                 setNumberOfLists(response)
             })
             .catch(error => console.log(error));

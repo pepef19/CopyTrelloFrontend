@@ -38,7 +38,6 @@ const RenderBoard = (props) => {
     }, [board]);
 
     const orderingControl = (id, newPosition) => {
-
         dataFromLists.map((list, index) => {
             if (list.id === id) {
                 dataFromLists[index].ordering = parseInt(newPosition, 10)
