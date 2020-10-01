@@ -69,7 +69,7 @@ export default function ListModal(props) {
     }
 
     const generateOption = (numberOfItems) => {
-        let array = []; //he puesto el 0 a lo cutre para solventar el problema de no poder seleccionar el 1, no es la mejor solución
+        let array = []; //he puesto el 0 a lo cutre para solventar el problema de no poder seleccionar el 1, no es la mejor solución //solución buena, hacer un select propio
         for (let i = 0; i <= numberOfItems; i++) {
             array.push(<option>{i}</option>)
         }

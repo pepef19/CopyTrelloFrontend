@@ -44,20 +44,15 @@ const RenderBoard = (props) => {
             } else if (list.ordering <= newPosition) {
                 dataFromLists[index].ordering = list.ordering - 1;
             }
-            Api.fetchResource("updateListsOrder", {
-                "method" : "POST",
-                "body": {
-                    "board_id": board.board.id,
-                    "lists_order": [
-                        {
-                            "id": list.id,
-                            "ordering": list.ordering
-                        }
-                    ]
-                }
-            }).then(() => {
-                setRefresh(false) //falta cerrar el modal
-            })
+        })
+        Api.fetchResource("updateListsOrder", {
+            "method" : "POST",
+            "body": {
+                "board_id": board.board.id,
+                "lists_order": dataFromLists
+            }
+        }).then(() => {
+            setRefresh(false)
         })
     }
 
