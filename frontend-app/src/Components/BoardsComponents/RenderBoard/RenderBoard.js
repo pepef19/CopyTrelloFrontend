@@ -38,14 +38,15 @@ const RenderBoard = (props) => {
     }, [board]);
 
     const orderingControl = (id, newPosition) => {
+        newPosition = parseInt(newPosition);
         const lists = [...dataFromLists];
         lists.sort((a,b) => a.ordering - b.ordering);
-
         lists.find(x => x.id ===id).ordering = lists[newPosition].ordering;
         lists.forEach((list, index) => {
-            if (index => newPosition && list.id !== id)
+            if (index >= newPosition && list.id !== id)
                 list.ordering = list.ordering + 1;
         })
+
         Api.fetchResource("updateListsOrder", {
             "method" : "POST",
             "body": {
