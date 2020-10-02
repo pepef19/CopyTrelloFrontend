@@ -24,8 +24,8 @@ const fetchResource = (resourceName, userOptions = {}, id, params = {}) => { //e
             ...userOptions.headers,
         }
     };
-    let url = `${API_HOST}/api/${resourceName}`;
 
+    let url = `${API_HOST}/api/${resourceName}`;
 
     if(id) {
         url = `${url}/${id}`;
@@ -40,7 +40,6 @@ const fetchResource = (resourceName, userOptions = {}, id, params = {}) => { //e
             }else {
                 url = `${url}${key}=${params[key]}`;
             }
-
         })
     }
 

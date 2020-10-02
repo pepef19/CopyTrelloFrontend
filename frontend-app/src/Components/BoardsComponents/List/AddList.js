@@ -14,12 +14,14 @@ export const AddList = (props) => {
     }
 
     useEffect(() => {
-        Api.fetchResource("lists_order", {}, undefined, {"board_id": board.id})
-            .then(response => {
-                setOrdering(response)
-            })
-            .catch(error => console.log(error));
-    },[])
+        if(board.id){
+            Api.fetchResource("lists_order", {}, undefined, {"board_id": board.id})
+                .then(response => {
+                    setOrdering(response)
+                })
+                .catch(error => console.log(error));
+        }
+    },[board.id])
 
     const handleOnClickSubmit = () => {
         Api.fetchResource("list", {
@@ -30,12 +32,9 @@ export const AddList = (props) => {
                 "ordering": ordering + 1
             }
         }).then((response) => {
-                if(response.ok) {
-                    setOrdering(ordering + 1)
-                    return response.json();
-                }
-                setRefresh(false);
-                setAddList({...addList, title:""})
+            setOrdering(response.ordering)
+            setRefresh(false);
+            setAddList({...addList, title:""})
         })
     }
 

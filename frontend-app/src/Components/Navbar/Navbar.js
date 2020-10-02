@@ -7,6 +7,8 @@ import {CreateModalUser} from "./CreateModalUser";
 
 const Navbar = props => {
 
+    //navbar esta utilizandose en dos sitios y pasando props distintas, por eso el ordering de los boards solo se crea bien si usamos el modal dentro de un board ya creado (porque así coge bien la prop de user_id)
+
     const {setRefresh, personalBoards} = props
 
     //console.log(personalBoards) //con esto estaba intentando obtener el id del user para despues poder coger su nombre y usarlo en User de la navbar
@@ -41,7 +43,7 @@ const Navbar = props => {
 
                 <div className="right-container-navbar">
                     <button onClick={() => setShowplus (true)} className="button-container-navbar"> <i className="icon-plus"/> </button>
-                    {showiconplus && <CreateModalIconPlus setRefresh={setRefresh} showiconplus={showiconplus} closeModalHandler={() => setShowplus(false)}/>}
+                    {showiconplus && <CreateModalIconPlus userId={props.userId} setRefresh={setRefresh} showiconplus={showiconplus} closeModalHandler={() => setShowplus(false)}/>}
                     <button onClick={() => setShowbell (true)} className="button-container-navbar" href="/"> <i className="icon-info-circled-alt"/> </button>
                     {showiconbell && <CreateModalIconBell showiconbell={showiconbell} closeModalHandler={() => setShowbell(false)}/>}
                     <button onClick={() => setShowbell (true)} className="button-container-bell" href="/"> <i className="icon-bell"/> </button>

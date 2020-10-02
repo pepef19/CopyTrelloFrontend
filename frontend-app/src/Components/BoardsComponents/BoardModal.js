@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BoardModal(props) {
 
-    const {id, setRefresh, open, handleClose} = props
+    const {userId: id, setRefresh, open, handleClose} = props
 
     const history = useHistory();
 
@@ -44,11 +44,14 @@ export default function BoardModal(props) {
     }
 
     useEffect(() => {
-        Api.fetchResource("boards_order", {}, id, {"user_id": id})
-            .then(response => {
-                setOrdering(response);
-        }).catch(error => console.log(error));
-    }, [])
+        if(id) {
+            Api.fetchResource("boards_order", {}, undefined, {"user_id": id})
+                .then(response => {
+                    setOrdering(response);
+                }).catch(error => console.log(error));
+        }
+        }, [id])
+
 
     const handleOnClickSubmit = () => {
         Api.fetchResource("board", {

@@ -3,7 +3,7 @@ import "./CreateModalIconPlus.css"
 import CloseModalOnClickOutside from "./CloseModalOnClickOutside";
 import BoardModal from "../BoardsComponents/BoardModal";
 
-export const CreateModalIconPlus = ({showiconplus, closeModalHandler, setRefresh}) => {
+export const CreateModalIconPlus = ({showiconplus, closeModalHandler, setRefresh, userId}) => {
 
     const [open, setOpen] = React.useState(false);
 
@@ -54,7 +54,7 @@ export const CreateModalIconPlus = ({showiconplus, closeModalHandler, setRefresh
                     </div>
                 </div>
             {/*</CloseModalOnClickOutside>*/}
-            <BoardModal className="button-organization" setRefresh={setRefresh} open={open} setOpen={setOpen} handleClose={handleClose} />
+            <BoardModal className="button-organization" userId={userId} setRefresh={setRefresh} open={open} setOpen={setOpen} handleClose={handleClose} />
         </div>
 )
 }

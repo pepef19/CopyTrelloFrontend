@@ -47,12 +47,14 @@ export default function ListModal(props) {
     };
 
     useEffect(() => {
-        Api.fetchResource("existing_lists", {}, undefined, {"board_id": board.id})
-            .then(response => {;
-                setNumberOfLists(response)
-            })
-            .catch(error => console.log(error));
-    }, [])
+        if(board.id){
+            Api.fetchResource("existing_lists", {}, undefined, {"board_id": board.id})
+                .then(response => {
+                    setNumberOfLists(response)
+                })
+                .catch(error => console.log(error));
+        }
+    }, [board.id])
 
     const handleDeleteList = () => {
         Api.fetchResource("list", {

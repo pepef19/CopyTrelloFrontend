@@ -44,12 +44,14 @@ export const ListWrapper = (props) => {
     }
 
     useEffect(() => {
-        Api.fetchResource("existing_lists", {}, undefined, {"board_id": board.id})
-            .then(response => {
-                setNumberOfLists(response)
-            })
-            .catch(error => console.log(error));
-    }, [])
+        if(board.id) {
+            Api.fetchResource("existing_lists", {}, undefined, {"board_id": board.id})
+                .then(response => {
+                    setNumberOfLists(response)
+                })
+                .catch(error => console.log(error));
+        }
+    }, [board.id])
 
     return (
         <div className="list-wrapper">

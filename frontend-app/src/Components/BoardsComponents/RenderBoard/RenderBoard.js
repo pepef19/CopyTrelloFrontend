@@ -58,7 +58,7 @@ const RenderBoard = (props) => {
 
     return (
         <div >
-            <Navbar setRefresh={setRefresh} />
+            <Navbar setRefresh={setRefresh} userId={board?.board?.user_id}/>
             <BoardHeader />
             <div id="board" className="render-board-screen">
                 {board && board.lists.map(list => <ListWrapper list={list} setRefresh={setRefresh} board={board.board} orderingControl={orderingControl} />)}
