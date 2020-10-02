@@ -1,7 +1,7 @@
 let API_HOST = 'http://localhost'; //localhost sin nada más hace referencia al puerto 80, que me sirve para atacar al backend
 
 if ( window.location.hostname !== "localhost" ) {
-    API_HOST = "https://pepe-trello.herokuapp.com"
+    API_HOST = "https://pepe-trello.herokuapp.com" //falta cambiar el backend, pero si lo hago ahora me cae la base de datos
 }
 
 const fetchResource = (resourceName, userOptions = {}, id, params = {}) => { //el resource name es lo que va despues de la / tras localhost. Las options son las opciones del fetch (mode, headers...).
